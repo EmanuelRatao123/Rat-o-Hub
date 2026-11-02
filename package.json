@@ -1,0 +1,12 @@
+{
+  "name": "ratao-hub",
+  "version": "1.0.0",
+  "description": "Plataforma RATAO_HUB - Criado por Emanuel Ratão",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
