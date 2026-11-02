@@ -2,6 +2,7 @@ services:
   - type: web
     name: rataohub-backend
     env: node
+    rootDir: backend
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
@@ -17,6 +18,7 @@ services:
   - type: web
     name: rataohub-frontend
     env: static
+    rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
